@@ -7,7 +7,7 @@ using BerlinClock.Classes.Viewers.Cells;
 
 namespace BerlinClock.Classes.Viewers
 {
-    public class HoursViewer : IBerlinClockViewer
+    public class HoursViewer : IClockViewer
     {
         private readonly List<Cell> _highRow;
         private readonly List<Cell> _lowRow;

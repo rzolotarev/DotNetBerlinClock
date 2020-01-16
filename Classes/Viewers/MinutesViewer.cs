@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BerlinClock.Classes.Viewers
 {
-    public class MinutesViewer : IBerlinClockViewer
+    public class MinutesViewer : IClockViewer
     {
         private readonly List<Cell> _highRow;
         private readonly List<Cell> _lowRow;

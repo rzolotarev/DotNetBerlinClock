@@ -15,9 +15,9 @@ namespace BerlinClock
             var time = Time.ParseFrom(aTime);
             
             var view = new StringBuilder();
-            view.AppendLine(BerlinClockViewer.ForSeconds().GetPresentation(time.Seconds));
-            view.AppendLine(BerlinClockViewer.ForHours().GetPresentation(time.Hours));
-            view.Append(BerlinClockViewer.ForMinutes().GetPresentation(time.Minutes));
+            view.AppendLine(BerlinClockViewerFactory.ForSeconds().GetPresentation(time.Seconds));
+            view.AppendLine(BerlinClockViewerFactory.ForHours().GetPresentation(time.Hours));
+            view.Append(BerlinClockViewerFactory.ForMinutes().GetPresentation(time.Minutes));
 
             return view.ToString();
         }

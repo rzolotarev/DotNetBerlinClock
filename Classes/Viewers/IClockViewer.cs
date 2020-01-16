@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BerlinClock.Classes.Viewers
 {
-    public interface IBerlinClockViewer
+    public interface IClockViewer
     {
         string GetPresentation(int timePart);
     }

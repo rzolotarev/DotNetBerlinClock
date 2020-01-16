@@ -8,17 +8,17 @@ namespace BerlinClock.Classes.Viewers
 {
     public static class BerlinClockViewerFactory
     {
-        public static IBerlinClockViewer ForHours()
+        public static IClockViewer ForHours()
         {
             return new HoursViewer();
         }
 
-        public static IBerlinClockViewer ForMinutes()
+        public static IClockViewer ForMinutes()
         {
             return new MinutesViewer();
         }
 
-        public static IBerlinClockViewer ForSeconds()
+        public static IClockViewer ForSeconds()
         {
             return new SecondsViewer();
         }
