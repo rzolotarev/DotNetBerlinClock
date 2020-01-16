@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BerlinClock.Classes.Viewers
 {
-    public static class BerlinClockViewer
+    public static class BerlinClockViewerFactory
     {
         public static IBerlinClockViewer ForHours()
         {
