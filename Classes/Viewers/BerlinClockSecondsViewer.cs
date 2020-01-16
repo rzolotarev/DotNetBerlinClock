@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BerlinClock.Classes.Viewers
 {
-    public class SecondsViewer : IClockViewer
+    public class BerlinClockSecondsViewer
     {
         private readonly Cell cell = Cell.Yellow();
 

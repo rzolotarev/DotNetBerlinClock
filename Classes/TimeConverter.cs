@@ -13,11 +13,15 @@ namespace BerlinClock
         public string convertTime(string aTime)
         {
             var time = Time.ParseFrom(aTime);
-            
+
+            var hours = BerlinClockViewerFactory.ForHours().GetPresentation(time.Hours);
+            var minutes = BerlinClockViewerFactory.ForMinutes().GetPresentation(time.Minutes);
+            var seconds = BerlinClockViewerFactory.ForSeconds().GetPresentation(time.Seconds);
+
             var view = new StringBuilder();
-            view.AppendLine(BerlinClockViewerFactory.ForSeconds().GetPresentation(time.Seconds));
-            view.AppendLine(BerlinClockViewerFactory.ForHours().GetPresentation(time.Hours));
-            view.Append(BerlinClockViewerFactory.ForMinutes().GetPresentation(time.Minutes));
+            view.AppendLine(seconds);
+            view.AppendLine(hours);
+            view.Append(minutes);
 
             return view.ToString();
         }

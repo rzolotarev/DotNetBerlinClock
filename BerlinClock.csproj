@@ -53,10 +53,9 @@
     <Compile Include="Classes\Parsers\TimeParser.cs" />
     <Compile Include="Classes\Viewers\Cells\Cell.cs" />
     <Compile Include="Classes\Viewers\Cells\CellStatus.cs" />
-    <Compile Include="Classes\Viewers\HoursViewer.cs" />
-    <Compile Include="Classes\Viewers\IClockViewer.cs" />
-    <Compile Include="Classes\Viewers\MinutesViewer.cs" />
-    <Compile Include="Classes\Viewers\SecondsViewer.cs" />
+    <Compile Include="Classes\Viewers\BerlinClockHoursViewer.cs" />
+    <Compile Include="Classes\Viewers\BerlinClockMinutesViewer.cs" />
+    <Compile Include="Classes\Viewers\BerlinClockSecondsViewer.cs" />
     <Compile Include="Classes\Viewers\BerlinClockViewerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BDD\BerlinClockFeatureSteps.feature.cs">

@@ -7,14 +7,14 @@ using BerlinClock.Classes.Viewers.Cells;
 
 namespace BerlinClock.Classes.Viewers
 {
-    public class HoursViewer : IClockViewer
+    public class BerlinClockHoursViewer
     {
         private readonly List<Cell> _highRow;
         private readonly List<Cell> _lowRow;
 
         private const int measure = 5;
 
-        public HoursViewer()
+        public BerlinClockHoursViewer()
         {
             _highRow = new List<Cell>() { Cell.Red(), Cell.Red(), Cell.Red(), Cell.Red() };
             _lowRow = new List<Cell>() { Cell.Red(), Cell.Red(), Cell.Red(), Cell.Red() };

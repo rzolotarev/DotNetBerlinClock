@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace BerlinClock.Classes.Viewers
 {
-    public class MinutesViewer : IClockViewer
+    public class BerlinClockMinutesViewer
     {
         private readonly List<Cell> _highRow;
         private readonly List<Cell> _lowRow;
         private const int measure = 5;
 
-        public MinutesViewer()
+        public BerlinClockMinutesViewer()
         {
             _highRow = new List<Cell>() { Cell.Yellow(), Cell.Yellow(), Cell.Red(),
                                           Cell.Yellow(), Cell.Yellow(), Cell.Red(),
